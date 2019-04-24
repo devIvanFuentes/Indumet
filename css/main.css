@@ -1,0 +1,168 @@
+/*GENERAL STYLES*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.ttf");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswald.ttf");
+}
+
+body{
+	font-family: 'Roboto';
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Oswald';
+}
+
+/*.ed-container{
+	max-width: 90%;
+}*/
+
+.section{
+	overflow: hidden;
+}
+
+
+.home{
+	position: relative;
+}
+
+.navegacion{
+	margin:0 auto;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.navegacion__logo img{
+	width: 150px;
+}
+
+.navegacion__menu ul {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	color: #000;
+}
+
+.navegacion ul a{
+	color: #fff;
+	text-decoration: none;
+	margin: 0 1em;
+}
+
+.home{
+	background-image: url('../img/home_background.jpg');
+	background-size: cover;
+	max-width: 100%;
+	background-position: center;
+	background-repeat: no-repeat; 
+}
+
+/*COPY HOMEPAGE*/
+.home__copy{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+}
+
+.home__copy .subtitle{
+	font-family: 'Roboto';
+}
+
+.home__title{
+	font-size: 60px;
+	color: #fff;
+}
+
+.home__cta{
+	margin-top: 3em;
+}
+
+.home__cta a{
+	border: solid 1px #FFA400;
+	padding: 10px 60px;
+	color: #FFF;
+	border-radius: 20px 20px;
+	background:#FFA400;
+}
+
+.home__cta a:hover{
+	background:#FFA400;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.social{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 30%;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 78%;
+	transform: translate(-50%,-50%);
+	transform: rotate(-90deg);
+}
+
+.social a{
+	color: #fff;
+}
+
+.facts{
+	position: absolute;
+	top: 93%;
+	left: 53%;
+	transform: translate(-50%,-50%);
+
+}
+
+.facts div{
+	padding: 10px 30px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.facts div h3{
+	position: relative;
+	font-size: 14px;
+
+}
+
+.facts div h3:before{
+	content:"";
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	left:-10px;
+	border:solid 1px #fff;
+	width: 10px;
+	height: 10px;
+	transform: translate(-50%,-50%);
+}
+
+.facts div:nth-child(2){
+	background:#6A6A6A;
+	color: #fff;
+}
+
+.facts div:nth-child(3){
+	background: #333333;
+}
+
+.facts div:nth-child(4){
+	background: #141414;
+}
+
+
+
