@@ -26,10 +26,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-.home{
-	position: relative;
-}
-
 .navegacion{
 	margin:0 auto;
 	position: absolute;
@@ -62,7 +58,11 @@ h1,h2,h3,h4,h5,h6{
 	background-size: cover;
 	max-width: 100%;
 	background-position: center;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
+	position: relative;
+	-webkit-animation: cohete 5s infinite; /* Safari 4.0 - 8.0 */
+  	animation: cohete 5s infinite;
+ 
 }
 
 /*COPY HOMEPAGE*/
@@ -162,6 +162,20 @@ h1,h2,h3,h4,h5,h6{
 
 .facts div:nth-child(4){
 	background: #141414;
+}
+
+/*ANIMACIONES*/
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes cohete {
+  0%   {background-position:0% 50%}
+  25%  {background-position:50% 70%;}
+}
+
+/* Standard syntax */
+@keyframes cohete {
+	0%   {background-position:0% 50%}
+  	25%  {background-position:50% 70%;}
 }
 
 
