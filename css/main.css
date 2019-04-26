@@ -23,6 +23,12 @@ h1,h2,h3,h4,h5,h6{
 
 .section{
 	overflow: hidden;
+	background-image: url('../img/home_background.jpg');
+	background-size: cover;
+	max-width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 
@@ -54,12 +60,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .home{
-	background-image: url('../img/home_background.jpg');
-	background-size: cover;
-	max-width: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
 	-webkit-animation: cohete 5s infinite; /* Safari 4.0 - 8.0 */
   	animation: cohete 5s infinite;
  
@@ -179,4 +179,21 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+/*
+******* ABOUT SECTION *****
+*/
+
+.about{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+}
+
+.about h5{
+	color:#fff;
+	font-size: 40px;
+
+}
 
