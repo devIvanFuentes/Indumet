@@ -1,10 +1,11 @@
 $(document).ready(function() {
-	$('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true
+	var owl = $('.owl-carousel');
+		owl.owlCarousel({
+		    items:2,
+		    loop:true,
+		    margin:10,
+		    autoplay:true,
+		    autoplayTimeout:3000,
+		    autoplayHoverPause:true
 	});
-
-	//methods
-	fullpage_api.setAllowScrolling(false);
 });
