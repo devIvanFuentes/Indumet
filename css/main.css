@@ -326,3 +326,32 @@ h1,h2,h3,h4,h5,h6{
 	background:none;
 	color: #fff;
 }
+
+
+@media screen and (max-width: 1024px){
+	.navegacion ul a{
+		display: none;
+	}
+
+	.home__title{
+		font-size: 45px;
+	}
+
+	.facts{
+		top: 89%;
+    	left: 50%;
+	}
+
+	.home__cta a{
+		padding: 5px 34px;
+	}
+
+
+	.social{
+		left: 80%;
+	}
+
+	.home__copy .subtitle{
+		width: 33%;
+	}
+}
