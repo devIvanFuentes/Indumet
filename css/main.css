@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6{
 
 .home{
 	-webkit-animation: cohete 5s infinite; /* Safari 4.0 - 8.0 */
-  	animation: cohete 5s infinite;
+  	animation: cohete 5s linear infinite;
  
 }
 
@@ -137,7 +137,7 @@ h1,h2,h3,h4,h5,h6{
 	color: #fff;
 	position: absolute;
 	top: 40%;
-	left: 78%;
+	left: 79%;
 	transform: translate(-50%,-50%);
 	transform: rotate(-90deg);
 }
@@ -216,13 +216,13 @@ h1,h2,h3,h4,h5,h6{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes cohete {
-  0%   {background-position:0% 50%}
+  0%   {background-position:50% 50%}
   25%  {background-position:50% 70%;}
 }
 
 /* Standard syntax */
 @keyframes cohete {
-	0%   {background-position:0% 50%}
+	0%   {background-position:50% 50%}
   	25%  {background-position:50% 70%;}
 }
 
@@ -354,4 +354,136 @@ h1,h2,h3,h4,h5,h6{
 	.home__copy .subtitle{
 		width: 33%;
 	}
+
+	/*NOSOTROS*/
+	.about img{
+		width: 75px;
+	}
+
+	/*WHY?*/
+	.why{
+		padding-left:15px;
+	}
 }
+
+@media screen and (max-width: 768px) { 
+	.social{
+		font-size: 12px;
+	}
+	.home__copy .subtitle{
+		width: 40%;
+	}
+
+	.about{
+		font-size: 15px;
+	}
+
+	.about h5{
+		font-size: 30px;
+	}
+
+	.about h5 br{
+		display: none;
+	}
+
+	.about__facts{
+		align-items: center;
+	}
+
+	.about__facts img{
+		width: 50px;
+		margin-left: -5px;
+	}
+
+	.nosotros{
+		top: 56%;
+	}
+
+	.navegacion{
+		top: 7%;
+	}
+
+	/*WHY*/
+	.gallery__image{
+		width: 200px;
+		height: 200px;
+	}
+
+	.gallery__image img{
+		width: 200px;
+		height: 200px;
+	}
+
+	.why{
+		font-size: 13px;
+		top: 55%;
+
+	}
+
+	.bullet:before{
+		left: 2px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 480px) { 
+	.facts div{
+		display: none;
+	}
+
+	.social{
+		font-size: 15px;
+		top: 75%;
+	}
+
+	.social a{
+		margin-left: 25px;
+	}
+
+	.home__copy{
+		top: 40%;
+	}
+
+	.home__copy .subtitle{
+		width: 65%;
+	}
+
+	.nosotros p{
+		font-size: 12px;
+	}
+
+	.nosotros h5{
+		font-size: 18px;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+		padding-top: 10px;
+	}
+
+	/*WHY*/
+	.gallery__image{
+		width: 150px;
+		height: 150px;
+	}
+
+	.gallery__image img{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+
+@media screen and (max-width: 320px) { 
+	.home__title{
+		font-size: 35px;
+	}
+
+	.nosotros p{
+		font-size: 11px;
+	}
+
+
+}
+
+
