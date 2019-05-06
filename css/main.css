@@ -17,9 +17,18 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Oswald';
 }
 
+#clientes__mobile{
+	display: none;
+}
 /*.ed-container{
 	max-width: 90%;
 }*/
+
+.contact__information a{
+	color: #fff;
+	text-decoration: none;
+	margin-top: 10em;
+}
 
 .bullet{
 	position: relative;
@@ -318,13 +327,30 @@ h1,h2,h3,h4,h5,h6{
 
 /*CONTACT FORM*/
 
-.contact__form input {
+.contact__form input, .contact__form textarea {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 1em;
 	font-size: 16px;
 	background:none;
 	color: #fff;
+}
+
+.about__contact{
+	top: 55%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
 }
 
 
@@ -424,6 +450,15 @@ h1,h2,h3,h4,h5,h6{
 		left: 2px;
 	}
 
+	.about__certificaciones{
+		font-size: 13px;
+		margin-top: 1em;
+	}
+
+	.contact__information{
+		display: none;
+	}
+
 
 
 }
@@ -450,6 +485,10 @@ h1,h2,h3,h4,h5,h6{
 		width: 65%;
 	}
 
+	.section__nosotros{
+		background-position: right !important;
+	}
+
 	.nosotros p{
 		font-size: 12px;
 	}
@@ -471,6 +510,18 @@ h1,h2,h3,h4,h5,h6{
 		width: 150px;
 		height: 150px;
 	}
+
+	.gallery{
+		display: none;
+	}
+
+	#clientes__desktop{
+		display: none;
+	}
+
+	#clientes__mobile{
+		display: block;
+	}
 }
 
 
@@ -482,7 +533,10 @@ h1,h2,h3,h4,h5,h6{
 	.nosotros p{
 		font-size: 11px;
 	}
-
+	
+	.gallery{
+		display: none;
+	}
 
 }
 
