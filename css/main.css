@@ -24,6 +24,70 @@ h1,h2,h3,h4,h5,h6{
 	max-width: 90%;
 }*/
 
+.icon-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.icon-menu a{
+	color: #fff;
+	margin-right: 20px;
+}
+
+/*ESTILOS MENU*/
+.menu__principal{
+    	width: 100%;
+    	height: 100vh;
+    	position: fixed;
+    	background: rgba(0,0,0,0.9);
+    	z-index: 5;
+    	display: none;
+    	justify-content: flex-end;
+    	align-items: center;
+    }
+    
+    .menu__principal nav{
+    	background: #fff;
+    	color: #000;
+    	width: 30%;
+    	height: 100vh;
+    	display: flex;
+    	justify-content: flex-start;
+    	align-items: center;
+    	flex-wrap: wrap;
+    }
+    
+    .menu__principal nav ul{
+    	list-style: none;
+    	line-height: 2em;
+    	width: 100%;
+    	margin-top: -80%;
+    
+    }
+    
+    .menu__principal nav a{
+    	color: #000;
+    	text-decoration: none;
+    }
+    
+    .menu__principal nav a:hover{
+    	border-bottom: solid 2px #ffe371;
+    	text-decoration: none;
+    }
+    
+    .menu__close{
+    	width: 100%;
+    	display: flex;
+    	justify-content: flex-end;
+    	align-items: center;
+    	align-self: flex-start;
+    	padding: 20px;
+    	cursor: pointer;
+    }
+/*END ESTILOS MENU*/
+
 /*SISTEMA SOLAR*/
 .about__sistema{
 	top: 55%;
@@ -345,6 +409,7 @@ h1,h2,h3,h4,h5,h6{
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: 2;
 }
 .navegacion__logo img{
 	width: 150px;
@@ -728,6 +793,10 @@ h1,h2,h3,h4,h5,h6{
 
 	.contact__information{
 		display: none;
+	}
+
+	.menu__principal nav{
+		width: 50%;
 	}
 
 
